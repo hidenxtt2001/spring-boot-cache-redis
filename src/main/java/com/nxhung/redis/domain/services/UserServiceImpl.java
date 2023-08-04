@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Collection;
 import java.util.Objects;
 
-@Servi
+@Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;

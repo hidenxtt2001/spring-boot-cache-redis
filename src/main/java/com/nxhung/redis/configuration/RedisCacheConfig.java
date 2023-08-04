@@ -26,7 +26,7 @@ public class RedisCacheConfig {
     @Bean
     public JedisConnectionFactory connectionFactory()
     {
-        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration("nxhung.io.vn", 6379);
+        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration(System.getenv("redis_host_url"), 6379);
         return new JedisConnectionFactory(redisStandaloneConfiguration);
     }
 
